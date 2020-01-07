@@ -1,6 +1,6 @@
 dist: bionic
 language: go
-go_import_path: github.com/godbus/dbus
+go_import_path: github.com/tsirysndr/dbus
 
 go:
   - 1.11.x
