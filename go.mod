@@ -1,3 +1,3 @@
-module github.com/tsirysndr/dbus/v5
+module github.com/tsirysndr/dbus
 
 go 1.12
