@@ -17,7 +17,7 @@ D-Bus message bus system.
 This packages requires Go 1.7. If you installed it and set up your GOPATH, just run:
 
 ```
-go get github.com/godbus/dbus
+go get github.com/tsirysndr/dbus
 ```
 
 If you want to use the subpackages, you can install them the same way.
