@@ -2,6 +2,7 @@ package dbus
 
 import (
 	"bytes"
+	"encoding/json"
 	"fmt"
 	"reflect"
 	"sort"
@@ -46,6 +47,10 @@ func ParseVariant(s string, sig Signature) (Variant, error) {
 		return Variant{}, err
 	}
 	return MakeVariant(v), nil
+}
+
+func (v Variant) MarshalJSON() ([]byte, error) {
+	return json.Marshal(v.Value())
 }
 
 // format returns a formatted version of v and whether this string can be parsed
